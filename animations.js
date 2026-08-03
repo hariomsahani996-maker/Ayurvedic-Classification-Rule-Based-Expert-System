@@ -69,7 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach(function (card) {
 
-        card.addEventListener("click", function () {
+        card.addEventListener("click", function (e) {
+
+            // Skip animation if the click happened on a form control
+            // (select, option, input, textarea, label, button)
+            const skipTags = ["SELECT", "OPTION", "INPUT", "TEXTAREA", "LABEL", "BUTTON"];
+            if (skipTags.includes(e.target.tagName)) {
+                return;
+            }
 
             card.classList.remove("clicked");
             // force reflow so animation can replay
