@@ -12,7 +12,7 @@ body{
     color:#333;
     background:
         linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
-        url("../image/H.avif");
+        url("H.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
