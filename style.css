@@ -22,7 +22,7 @@ body{
     color:var(--charcoal);
     background:
         linear-gradient(rgba(251,248,242,0.88), rgba(251,248,242,0.88)),
-        url("../image/H.avif");
+        url("H.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
